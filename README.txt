@@ -9,3 +9,17 @@ Działanie aplikacji jest proste. Wprowadzamy dwie liczby, wybieramy operację, 
 Jak wygląda interakcja z użytkownikiem (opisz mechanizm)?
 
 Kiedy uruchamiamy aplikację, zostaniemy poproszeni o podanie dwóch liczb. Następnie aplikacja zapyta nas, jaką operację chcemy wykonać. Po dokonaniu wyboru, aplikacja przeprowadza obliczenia i pokazuje wynik. Możemy kontynuować, wprowadzając nowe liczby i wykonując kolejne operacje, lub zakończyć korzystanie z programu.
+
+----Wersja 0.2.0 Beta (2023-11-30)
+
+- Dodano obsługę liczb zmiennoprzecinkowych w polu wprowadzania.
+
+- Poprawiono komunikaty błędów podczas wprowadzania nieprawidłowych wartości.
+
+- Zaktualizowano nazwy zmiennych na bardziej zrozumiałe i zgodne z zasadami języka.
+
+- Dodano możliwość zakończenia programu bezpośrednio po wyświetleniu wyniku.
+
+- Skrócono i zoptymalizowano niektóre fragmenty kodu.
+
+- Drobne poprawki w interfejsie użytkownika i komunikatach wyjścia.

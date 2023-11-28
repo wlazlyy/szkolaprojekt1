@@ -1,47 +1,59 @@
 import java.util.Scanner;
 
-public class calculator {
+public class Kalkulator {
+
+    private static final char DODAWANIE = '+';
+    private static final char ODEJMOWANIE = '-';
+    private static final char MNOŻENIE = '*';
+    private static final char DZIELENIE = '/';
+    private static final char POTĘGOWANIE = '^';
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Podaj pierwszą liczbę: ");
-        double liczba1 = scanner.nextDouble();
+        double pierwszaLiczba = scanner.nextDouble();
 
         System.out.println("Podaj drugą liczbę: ");
-        double liczba2 = scanner.nextDouble();
+        double drugaLiczba = scanner.nextDouble();
 
         System.out.println("Wybierz operację (+, -, *, /, ^): ");
-        char operator = scanner.next().charAt(0);
+        char matematycznaOperacja = scanner.next().charAt(0);
 
+        double rezultat = obliczWynik(pierwszaLiczba, drugaLiczba, matematycznaOperacja);
+
+        System.out.println("Wynik: " + rezultat);
+    }
+
+    private static double obliczWynik(double liczba1, double liczba2, char operator) {
         double wynik = 0;
 
         switch (operator) {
-            case '+':
+            case DODAWANIE:
                 wynik = liczba1 + liczba2;
                 break;
-            case '-':
+            case ODEJMOWANIE:
                 wynik = liczba1 - liczba2;
                 break;
-            case '*':
+            case MNOŻENIE:
                 wynik = liczba1 * liczba2;
                 break;
-            case '/':
+            case DZIELENIE:
                 if (liczba2 != 0) {
                     wynik = liczba1 / liczba2;
                 } else {
                     System.out.println("Nie można dzielić przez zero!");
-                    return;
+                    System.exit(1);
                 }
                 break;
-            case '^':
+            case POTĘGOWANIE:
                 wynik = Math.pow(liczba1, liczba2);
                 break;
             default:
                 System.out.println("Niepoprawny operator!");
-                return;
+                System.exit(1);
         }
 
-        System.out.println("Wynik: " + wynik);
+        return wynik;
     }
 }
