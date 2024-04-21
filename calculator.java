@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Kalkulator {
+public class calculator {
 
     private static final char DODAWANIE = '+';
     private static final char ODEJMOWANIE = '-';
@@ -12,10 +12,10 @@ public class Kalkulator {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Podaj pierwszą liczbę: ");
-        double pierwszaLiczba = scanner.nextDouble();
+        double pierwszaLiczba = PoprawZnaki(scanner);
 
         System.out.println("Podaj drugą liczbę: ");
-        double drugaLiczba = scanner.nextDouble();
+        double drugaLiczba = PoprawZnaki(scanner);
 
         System.out.println("Wybierz operację (+, -, *, /, ^): ");
         char matematycznaOperacja = scanner.next().charAt(0);
@@ -24,6 +24,19 @@ public class Kalkulator {
 
         System.out.println("Wynik: " + rezultat);
     }
+
+    private static double PoprawZnaki(Scanner scanner){
+        while (true) {
+            if (scanner.hasNextDouble()) {
+                return scanner.nextDouble();
+            } else {
+                System.out.println("To nie jest liczba! Wprowadz poprawna liczbe:");
+                scanner.next();
+            }
+        }
+    }
+
+
 
     private static double obliczWynik(double liczba1, double liczba2, char operator) {
         double wynik = 0;

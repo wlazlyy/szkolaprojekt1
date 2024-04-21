@@ -23,3 +23,8 @@ Kiedy uruchamiamy aplikację, zostaniemy poproszeni o podanie dwóch liczb. Nast
 - Skrócono i zoptymalizowano niektóre fragmenty kodu.
 
 - Drobne poprawki w interfejsie użytkownika i komunikatach wyjścia.
+
+
+
+----(2024-04-08)
+-Naprawiono błąd przy wpisywaniu litery.
