@@ -14,7 +14,7 @@ public class calculator {
 
         System.out.println("Wybierz opcję:");
         System.out.println("1. Działanie matematyczne (+, -, *, /, ^)");
-        System.out.println("2. Przeliczenie jednostek");
+        System.out.println("2. Przeliczanie jednostek");
 
 
         char opcja = scanner.next().charAt(0);

@@ -31,8 +31,8 @@ Kiedy uruchamiamy aplikację, zostaniemy poproszeni o podanie dwóch liczb. Nast
 
 
 ---(2024-04-21)
--Dodano możliwość przeliczenia jednostek dla długości (metry, centymetry, cale)
--Dodano możliwość przeliczenia jednostek dla prędkości (kilometry na mile, mile na kilometry)
+-Dodano możliwość przeliczenia jednostek dla długości (metry, centymetry, cale).
+-Dodano możliwość przeliczenia jednostek dla prędkości (kilometry na mile, mile na kilometry).
 
 ---(2024-04-22)
--Dodano możliwość przeliczenia jednostek dla temperatury(Celcjusze na Fahrenheity, Fahrenheita na Celcjusze)
+-Dodano możliwość przeliczenia jednostek dla temperatury(Celcjusze na Fahrenheity, Fahrenheita na Celcjusze).
