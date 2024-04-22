@@ -35,4 +35,4 @@ Kiedy uruchamiamy aplikację, zostaniemy poproszeni o podanie dwóch liczb. Nast
 -Dodano możliwość przeliczenia jednostek dla prędkości (kilometry na mile, mile na kilometry).
 
 ---(2024-04-22)
--Dodano możliwość przeliczenia jednostek dla temperatury(Celcjusze na Fahrenheity, Fahrenheita na Celcjusze).
+-Dodano możliwość przeliczenia jednostek dla temperatury(Celsjusze na Fahrenheity, Fahrenheita na Celsjusze).
