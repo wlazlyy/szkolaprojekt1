@@ -16,6 +16,7 @@ public class calculator {
         System.out.println("1. Działanie matematyczne (+, -, *, /, ^)");
         System.out.println("2. Przeliczenie jednostek");
 
+
         char opcja = scanner.next().charAt(0);
 
         switch (opcja) {
@@ -50,6 +51,7 @@ public class calculator {
         System.out.println("Wybierz typ przeliczenia:");
         System.out.println("a. Długość");
         System.out.println("b. Prędkość");
+        System.out.println("c. Temperatura");
 
         char typPrzeliczenia = scanner.next().charAt(0);
 
@@ -59,6 +61,9 @@ public class calculator {
                 break;
             case 'b':
                 przeliczPrędkość(scanner);
+                break;
+            case 'c':
+                przeliczTemperaturę(scanner);
                 break;
             default:
                 System.out.println("Niepoprawny typ przeliczenia!");
@@ -147,6 +152,32 @@ public class calculator {
         } else {
             System.out.println("Niepoprawna jednostka wejściowa!");
             return;
+        }
+
+        System.out.println("Wynik: " + wynik);
+    }
+
+    private static void przeliczTemperaturę(Scanner scanner) {
+        System.out.println("Wybierz skalę temperatury:");
+        System.out.println("1. Celsiusza na Fahrenheit");
+        System.out.println("2. Fahrenheit na Celsiusza");
+
+        int skala = scanner.nextInt();
+        System.out.println("Podaj wartość:");
+
+        double wartość = scanner.nextDouble();
+        double wynik = 0;
+
+        switch (skala) {
+            case 1:
+                wynik = (wartość * 9/5) + 32;
+                break;
+            case 2:
+                wynik = (wartość - 32) * 5/9;
+                break;
+            default:
+                System.out.println("Niepoprawna skala!");
+                return;
         }
 
         System.out.println("Wynik: " + wynik);
